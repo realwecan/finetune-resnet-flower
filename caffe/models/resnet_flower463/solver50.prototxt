@@ -1,0 +1,14 @@
+net: "models/resnet_flower463/train_val.prototxt"
+test_iter: 2000
+test_interval: 1000
+base_lr: 0.001
+lr_policy: "step"
+gamma: 0.1
+stepsize: 20000
+display: 100
+max_iter: 100000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 10000
+snapshot_prefix: "models/resnet_flower463/resnet_flower463"
+solver_mode: GPU
